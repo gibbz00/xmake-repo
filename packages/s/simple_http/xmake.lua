@@ -14,7 +14,7 @@ package("simple_http")
 
     add_deps("cmake")
     add_deps("boost", {configs = {asio = true}})
-    add_deps("openssl")
+    add_deps("openssl3")
     add_deps("nghttp2")
 
     on_install("linux", "cross", "bsd", function (package)
